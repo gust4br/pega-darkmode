@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "Pega Plantão Darkmode",
+	"version": "0.1",
+	"content_scripts":[
+		{
+			"matches": [
+				"https://*.pegaplantao.com.br/*", 
+				"https://pegaplantao.com.br/*",
+				"http://*.pp.com:6010/*",
+				"https://*.pp.com:6010/*"
+			],
+			"js":[
+				"index.js"
+			],
+			"css":[
+				"style.css"
+			]
+		}
+	],
+	"web_accessible_resources": ["darkmode.css"]
+}
